@@ -1,0 +1,217 @@
+:root {
+  --primary-color: #1a1a1a;
+  --secondary-color: #333333;
+  --text-color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: Helvetica, Tahoma, sans-serif;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  text-shadow:
+  -1px -1px 0.3 black,
+  1px -1px 0.3 black,
+  -1px 1px 0.3 black,
+  1px 1px 0.3 black;
+}
+
+#root {
+  padding: 20px;
+  background-color: var(--secondary-color);
+  border: solid 2px #000000;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  position: absolute;
+  left: 50vw;
+  transform: translate(-50%, 0);
+  width: 85vw;
+  max-width: 900px;
+  min-width: 700px;
+  height: 1000px;
+  text-align: center;
+}
+
+.App {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#info{
+  margin-top: -15px;
+  margin-left: -10px;
+  font-size: 0.7rem;
+  color: var(--primary-color);
+  position: absolute;
+}
+
+#status{
+  font-size: 0.7rem;
+  color: var(--text-color);
+}
+
+#input {
+  padding: 20px;
+  width: 200px;
+  height: 500px;
+  text-align: left;
+}
+
+#materials {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 15px;
+}
+
+#crons {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 15px;
+}
+
+#results {
+  padding: 20px;
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#failstacks {
+  margin-top: -70px;
+  padding: 20px;
+  width: 100%;
+  height: 600px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.toggle-button {
+  background-color: #ccc;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-button.active {
+  background-color: #00c853;
+}
+
+.toggle-button.inactive {
+  background-color: #e53935;
+}
+
+.inputReblath{
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.8rem;
+  width: 100%;
+}
+
+.outputBoxReblath {
+  padding: 8px;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  outline: none;
+  width: 60px;
+  text-align: center;
+}
+
+.inputReblathButton {
+  padding: 8px;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  width: 40px;
+}
+
+.inputReblathButton:hover {
+  background-color: var(--secondary-color);
+}
+
+.inputReblathButton:active {
+  background-color: #404040;
+}
+
+.inputReblath > p {
+  text-align: left;
+  width: 160px;
+}
+
+.outputLevel > h1 {
+  width: 50px;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.outputLevel{
+  display: flex;
+  flex-direction: row;
+  height: 15%;
+  align-items: center;
+  gap: 15px;
+  width: 100%
+}
+
+.inputBox {
+  height: 20px;
+  padding: 8px;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  outline: none;
+  gap: 10px;
+  align-items: center;
+}
+
+.inputMatBox {
+  padding: 8px;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  outline: none;
+  width: 100px;
+}
+
+.inputReblathBox {
+  padding: 8px;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  outline: none;
+  width: 100px;
+}
+
+.outputBox {
+  padding: 8px;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  outline: none;
+  width: 60px;
+}
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
