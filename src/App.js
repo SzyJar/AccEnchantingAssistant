@@ -54,7 +54,7 @@ class App extends React.Component {
     };
     
     startCalculations() {
-        this.ench.fs = [18, 40, 44, 110, 250]; // reset failstacks
+        this.ench.fs = [0, 0, 0, 0, 0]; // reset failstacks
         this.ench.cron = [false, false, false, false, false]; // reset cron strategy
         this.ench.baseFs = this.state.baseFs; // set base failstack
         this.ench.reblathFs = this.state.reblathFs // set reblath strategy
