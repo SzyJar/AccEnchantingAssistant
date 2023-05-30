@@ -225,7 +225,7 @@ class App extends React.Component {
                     value = {this.state.accessoryValue}
                     onChange = {this.handleAccessoryValueChange} />
                     <div id = "crons">
-                    <img src="/images/cron.png" alt="Cron stone" />
+                    <img src={require(".//images/cron.png")} alt="Cron stone" />
                     <input
                     type = "number"
                     className = "inputMatBox"
@@ -242,14 +242,14 @@ class App extends React.Component {
                         <div>
                         <p>Material cost:</p>
                         <div id = "materials">
-                            <img src="/images/stone.png" alt="Black stone" />
+                            <img src={require(".//images/stone.png")} alt="Black stone" />
                             <input
                             type = "number"
                             className = "inputMatBox"
                             value = {this.state.blackStoneValue}
                             onChange = {this.handleBlackStoneValueChange} />
 
-                            <img src="/images/concentrated.png" alt="Concentrated black stone" />
+                            <img src={require(".//images/concentrated.png")} alt="Concentrated black stone" />
                             <input
                             type = "number"
                             className = "inputMatBox"
