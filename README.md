@@ -3,8 +3,6 @@ Calculate accessory enchanting cost and optimal failstacks.
 
 Visit https://szyjar.github.io/AccEnchantingAssistant/ for live project.
 
-Please note that the values provided by this tool may not be accurate.
-
 ## Application description
 
 Application allows to estimate average cost of making accesory of given enchant level. It also attempts to determine failstack values and cron strategy for minimal silver cost.
