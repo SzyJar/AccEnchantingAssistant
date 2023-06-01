@@ -147,7 +147,8 @@ class Enchanting {
           cost = this.calculateCost();
         } while (previousCost[i] > cost[i] && this.fs[i] <= 97);
         this.fs[i] = previousFs;
-        if( this.fs[i] <= 100 && this.fs[i] >= 97){ this.fs[i] += 13 };
+        // add 13 valk's cry if stack is higher than 90
+        if( this.fs[i] <= 100 && this.fs[i] >= 90){ this.fs[i] += 13 };
       };
     };
 
