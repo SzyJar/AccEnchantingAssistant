@@ -77,7 +77,7 @@ class App extends React.Component {
         if (parseFloat(event.target.value) > 500) {
             // set crons for debo
             this.ench.cronAmount = [95, 288, 865, 2405, 11548];
-            this.setState({ info: 'All silver values are in millions, deboreka cron values has ben set.' });
+            this.setState({ info: 'All silver values are in millions, deboreka cron values has been set.' });
         } else {
             // set crons for normal accessory
             this.ench.cronAmount = [62, 187, 562, 1562, 7499];
